@@ -83,6 +83,11 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && yarn eslint && git add ."
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
